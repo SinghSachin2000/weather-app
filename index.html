@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="mainHeading">WEATHER APP</div>
+        <div class="startBtn">
+            <div class="tab yourweathertab">Your weather</div>
+            <div class="tab searchweathertab">Search weather</div>
+        </div>
+        <div>
+            <!-- 1st part -->
+            <div class="grantLocation">
+                <img src="./images/location.png" alt="" width="50px">
+                <div>Grant Location Access</div>
+                <div>Allow Access to get weather information</div>
+                <button class="grantAccessBtn">GRANT ACCESS</button>
+
+            </div>
+
+           
+            <!-- 2nd part -->
+            <div class="weatherShow">
+                <div class="place">
+                    <div class="placeName"></div>
+                    <img width="40px" height="40px" class="flag">
+                </div>
+                <div class="condition"></div>
+                <img width="60px" height="60px" class="conditionimage" >
+                <div class="temp"></div>
+                <div class="box">
+                    <div class="boxItem">
+                        <img src="./images/wind.png" alt=""  width="60px" height="60px">
+                        <div class="wind">WINDSPEED</div>
+                        <div class="windspeed"></div>
+                    </div>
+                    <div class="boxItem">
+                        <img src="./images/humidity.png" alt=""  width="60px" height="60px">
+                        <div class="humid">HUMIDITY</div>
+                        <div class="humidity"></div>
+                    </div>
+                    <div class="boxItem">
+                        <img src="./images/cloud.png" alt=""  width="60px" height="60px">
+                        <div class="cloud">CLOUDS</div>
+                        <div class="cloudyness"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd part -->
+            <div class="searchweather">
+                <input type="text" placeholder="Search here..." class="searchHere">
+                <button class="searchBtn" type="submit"><img src="./images/search.png" alt="" width="20px"></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

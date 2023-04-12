@@ -1,0 +1,156 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* width: 100vw; */
+    /* height: 100vh; */
+}
+body{
+    background-color: rgb(102, 102, 163);
+}
+.wrapper{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainHeading{
+margin: 20px;
+font-size:xx-large;
+font-weight: bold;
+color: white;
+}
+.startBtn{
+    min-width: 500px;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+    color: white;
+}
+
+.grantLocation{
+text-align: center;
+color: white;
+font-size: larger;
+margin-top: 40px;
+}
+.grantAccessBtn{
+    background-color: rgba(219, 226, 239, 0.5);
+    color: white;
+    font-size:large;
+    padding: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    border: hidden;
+    border-radius: 4px;
+}
+.searchHere{
+    all: unset;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+    width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+  
+}
+input::placeholder{
+    color: white;
+    font-size: larger;
+}
+input:focus{
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+}
+.searchBtn{
+    border: hidden;
+    margin: 10px;
+    padding:unset;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color:rgba(219, 226, 239, 0.5) ;
+}
+.weatherShow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.place{
+    display: flex;
+    margin: 20px;
+}
+.placeName{
+    font-size:xx-large;
+    padding: 10px;
+
+}
+.flag{
+    margin-top: 10px;
+}
+.condition{
+    font-size:xx-large;
+}
+.temp{
+    font-size:xx-large;
+}
+.box{
+    display: flex;
+    padding: 20px;
+}
+.boxItem{
+    width: 200px;
+    background-color:rgba(219, 226, 239, 0.5);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.wind{
+    font-size:x-large;
+}
+.windspeed{
+    font-size:x-large;
+}
+.humid{
+    font-size:x-large;
+}
+.humidity{
+    font-size:x-large;
+}
+.cloud{
+    font-size:x-large;
+}
+.cloudyness{
+    font-size:x-large;
+}
+.grantLocation{
+    display: none;
+}
+.weatherShow{
+    display: none;
+}
+.searchweather{
+    display: none; 
+    margin-top: 60px;
+}
+.tab{
+    cursor: pointer;
+    padding: 4px;
+}
+/* js */
+.tab.current-tab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+.searchweather.active{
+display: flex;
+}
+.grantLocation.active{
+    display:block;
+    
+}
+.weatherShow.active{
+    display:flex;
+}
